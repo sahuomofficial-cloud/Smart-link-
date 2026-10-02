@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Win a Free $750 Digital Reward</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0b0c10;
+    }
+    .card-glow-green {
+      box-shadow: 0 0 35px rgba(0, 214, 50, 0.75);
+      border: 2px solid #00D632 !important;
+      transform: translateY(-14px) rotate(-6deg) scale(1.05) !important;
+      z-index: 50 !important;
+    }
+    .card-glow-blue {
+      box-shadow: 0 0 35px rgba(0, 112, 186, 0.8);
+      border: 2px solid #38bdf8 !important;
+      transform: translateY(-14px) rotate(-2deg) scale(1.05) !important;
+      z-index: 50 !important;
+    }
+    .card-glow-purple {
+      box-shadow: 0 0 35px rgba(168, 85, 247, 0.8);
+      border: 2px solid #c084fc !important;
+      transform: translateY(-14px) rotate(2deg) scale(1.05) !important;
+      z-index: 50 !important;
+    }
+    .card-glow-red {
+      box-shadow: 0 0 35px rgba(244, 63, 94, 0.8);
+      border: 2px solid #fb7185 !important;
+      transform: translateY(-14px) rotate(6deg) scale(1.05) !important;
+      z-index: 50 !important;
+    }
+    @keyframes subtlePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .pulse-btn {
+      animation: subtlePulse 2.4s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c10] text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-amber-400 selection:text-black">
+
+  <!-- BACKGROUND AMBIENT GLOW -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="absolute top-[12%] left-1/2 -translate-x-1/2 w-[550px] h-[350px] bg-amber-500/10 rounded-full blur-[120px]"></div>
+    <div class="absolute top-[45%] left-1/2 -translate-x-1/2 w-[450px] h-[280px] bg-amber-500/5 rounded-full blur-[90px]"></div>
+  </div>
+
+  <!-- TOP HEADER -->
+  <header class="relative z-10 w-full pt-6 pb-2 px-6 flex items-center justify-between max-w-4xl mx-auto">
+    <div class="flex items-center gap-2">
+      <div class="text-amber-400">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a2.5 2.5 0 0 0-2.5 2.5c0 .38.08.73.22 1.05L4.5 6A2.5 2.5 0 0 0 2 8.5V10h9V2h1v8h9V8.5A2.5 2.5 0 0 0 18.5 6l-5.22-.45c.14-.32.22-.67.22-1.05A2.5 2.5 0 0 0 12 2zm-1 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM2 11v8.5A2.5 2.5 0 0 0 4.5 22h6.5v-11H2zm13 11h6.5a2.5 2.5 0 0 0 2.5-2.5V11h-9v11z"/></svg>
+      </div>
+      <span class="text-xl font-bold tracking-tight">
+        <span class="text-amber-400 font-extrabold">Gift</span> <span class="text-white">Coupons</span>
+      </span>
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <main class="relative z-10 w-full max-w-lg mx-auto px-4 py-4 flex-1 flex flex-col items-center justify-center text-center">
+
+    <!-- BADGE -->
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#181a20]/90 border border-amber-500/30 text-xs font-semibold text-amber-300 mb-6 shadow-xs">
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+      <span>New coupons added today</span>
+    </div>
+
+    <!-- MAIN HEADLINE -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.12] mb-3">
+      Win a Free $750 Digital Reward
+    </h1>
+
+    <p class="text-slate-400 text-sm sm:text-base font-normal max-w-sm mb-8 leading-relaxed">
+      One quick verification. Get CashApp (US) or PayPal (AU) balance — instantly.
+    </p>
+
+    <!-- 4 FANNING FLOATING CARDS -->
+    <div class="relative w-full max-w-[340px] sm:max-w-[380px] h-[185px] sm:h-[205px] mb-8 select-none">
+      
+      <!-- Card 1: Cash App 🇺🇸 (Green/Emerald) -->
+      <div id="card-0" onclick="selectCard(0)" class="absolute w-[140px] sm:w-[160px] h-[95px] sm:h-[105px] rounded-xl bg-gradient-to-br from-[#00D632] via-[#00B82B] to-[#008A20] p-2.5 sm:p-3 text-white flex flex-col justify-between cursor-pointer transition-all duration-300 left-[2%] bottom-[12%] -rotate-6 z-10 border border-white/10 card-glow-green">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 1v22m5-18H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <span class="font-bold text-xs sm:text-sm">Cash App 🇺🇸</span>
+        </div>
+        <div class="text-[9px] font-black uppercase tracking-wider opacity-90 text-right">
+          GIFT CARD
+        </div>
+      </div>
+
+      <!-- Card 2: PayPal 🇦🇺 (Blue) -->
+      <div id="card-1" onclick="selectCard(1)" class="absolute w-[140px] sm:w-[160px] h-[95px] sm:h-[105px] rounded-xl bg-gradient-to-br from-[#0070BA] via-[#005a96] to-[#003087] p-2.5 sm:p-3 text-white flex flex-col justify-between cursor-pointer transition-all duration-300 left-[24%] bottom-[18%] -rotate-2 z-20 border border-white/10">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12V7H5a2 2 0 0 1 0-4h14v4M3 5v14a2 2 0 0 0 2 2h16v-5M18 12a2 2 0 0 0 0 4h4v-4h-4z"/></svg>
+          <span class="font-bold text-xs sm:text-sm">PayPal 🇦🇺</span>
+        </div>
+        <div class="text-[9px] font-black uppercase tracking-wider opacity-90 text-right">
+          GIFT CARD
+        </div>
+      </div>
+
+      <!-- Card 3: $750 Reward Card (Purple) -->
+      <div id="card-2" onclick="selectCard(2)" class="absolute w-[140px] sm:w-[160px] h-[95px] sm:h-[105px] rounded-xl bg-gradient-to-br from-[#a855f7] via-[#8b5cf6] to-[#6d28d9] p-2.5 sm:p-3 text-white flex flex-col justify-between cursor-pointer transition-all duration-300 right-[24%] bottom-[18%] rotate-2 z-30 border border-white/10">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          <span class="font-bold text-xs sm:text-sm">$750 Reward Card</span>
+        </div>
+        <div class="text-[9px] font-black uppercase tracking-wider opacity-90 text-right">
+          GIFT CARD
+        </div>
+      </div>
+
+      <!-- Card 4: Instant Digital Transfer (Red) -->
+      <div id="card-3" onclick="selectCard(3)" class="absolute w-[140px] sm:w-[160px] h-[95px] sm:h-[105px] rounded-xl bg-gradient-to-br from-[#f43f5e] via-[#e11d48] to-[#be123c] p-2.5 sm:p-3 text-white flex flex-col justify-between cursor-pointer transition-all duration-300 right-[2%] bottom-[12%] rotate-6 z-10 border border-white/10">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span class="font-bold text-xs sm:text-sm">Instant Digital Transfer</span>
+        </div>
+        <div class="text-[9px] font-black uppercase tracking-wider opacity-90 text-right">
+          GIFT CARD
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIGN IN CONTAINER / CTA BOX -->
+    <div class="w-full max-w-sm bg-[#13151b] border border-amber-500/20 rounded-2xl p-5 shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
+      <p class="text-xs sm:text-sm text-slate-300 font-medium mb-3.5">
+        Verify your location to claim your $750 reward
+      </p>
+
+      <a 
+        href="https://trkoffer.net/sl/4rgvd" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="pulse-btn w-full py-3.5 px-6 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-amber-500/25 active:scale-[0.98] transition-all cursor-pointer"
+      >
+        <span class="text-base font-black">➔</span>
+        <span>Verify & Claim Now</span>
+      </a>
+    </div>
+
+    <!-- 3 TRUST BADGES -->
+    <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-xs text-slate-400 font-medium">
+      <div class="flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span>Safe & Secure</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Instant Delivery</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>30 Seconds</span>
+      </div>
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="mt-8 text-slate-500 text-xs font-medium flex items-center gap-1 opacity-70">
+      <span>Scroll to learn more</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+
+  </main>
+
+  <!-- HOW IT WORKS (ON SCROLL) -->
+  <section class="relative z-10 w-full max-w-xl mx-auto px-4 py-12 border-t border-slate-800/80 mt-8 text-slate-300">
+    <h2 class="text-xl font-bold text-white text-center mb-6">How It Works</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+      <div class="bg-[#13151b] p-4 rounded-xl border border-slate-800">
+        <div class="text-amber-400 font-extrabold text-sm mb-1">01. Location Verify</div>
+        <p class="text-slate-400 leading-relaxed">Complete the 30-second verification for US or AU resident eligibility.</p>
+      </div>
+      <div class="bg-[#13151b] p-4 rounded-xl border border-slate-800">
+        <div class="text-amber-400 font-extrabold text-sm mb-1">02. Spot Allocation</div>
+        <p class="text-slate-400 leading-relaxed">The consumer panel releases an unlocked $750 digital balance voucher.</p>
+      </div>
+      <div class="bg-[#13151b] p-4 rounded-xl border border-slate-800">
+        <div class="text-amber-400 font-extrabold text-sm mb-1">03. Instant Payout</div>
+        <p class="text-slate-400 leading-relaxed">Transferred directly to your Cash App $Cashtag or PayPal email.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative z-10 w-full py-6 px-4 text-center text-xs text-slate-500 border-t border-slate-900 bg-[#07080a]">
+    <div class="max-w-md mx-auto space-y-2">
+      <div class="flex items-center justify-center gap-4 text-slate-400 font-medium">
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <span>·</span>
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <span>·</span>
+        <span>© 2026 Gift Coupons</span>
+      </div>
+      <p class="text-[11px] text-slate-600">
+        Independent promotional giveaway. Brand names and logos are trademarks of their respective owners.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    let currentIndex = 0;
+    const cardElements = [
+      { id: 'card-0', glow: 'card-glow-green' },
+      { id: 'card-1', glow: 'card-glow-blue' },
+      { id: 'card-2', glow: 'card-glow-purple' },
+      { id: 'card-3', glow: 'card-glow-red' }
+    ];
+
+    function applyCardSelection(index) {
+      cardElements.forEach((item, i) => {
+        const el = document.getElementById(item.id);
+        if (!el) return;
+        el.classList.remove('card-glow-green', 'card-glow-blue', 'card-glow-purple', 'card-glow-red');
+        if (i === index) {
+          el.classList.add(item.glow);
+        }
+      });
+    }
+
+    function selectCard(index) {
+      currentIndex = index;
+      applyCardSelection(currentIndex);
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % cardElements.length;
+      applyCardSelection(currentIndex);
+    }, 2200);
+
+    applyCardSelection(0);
+  </script>
+</body>
+</html>
